@@ -38,14 +38,9 @@ await ctx.send(embed=embed)
 @commands.has_permissions(ban_members = True)
 async def ban(ctx, member : discord.Member, *, reason = None):
     await member.ban(reason = reason)
-    await ctx.send('gebannát wegen {reason}')
+    await ctx.send('gebannat wegen {reason}')
 
 
-@bot.command()
-@commands.has_permissions(ban_members = True)
-async def ban(ctx, member : discord.Member, *, reason = None):
-    await member.ban(reason = reason)
-    await ctx.send('gebannát wegen {reason}')
 
 @bot.command()
 @commands.has_permissions(kick_members = True)
